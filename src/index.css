@@ -1,13 +1,51 @@
-body {
+*,
+*::before,
+*::after {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: sans-serif;
+  font-family: 'Montserrat Alternates', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  --primary-color: #212121;
+  --primary-color-m: rgba(33, 33, 33, 0.7);
+  --secondary-color: #262626;
+
+  --primary-font-color: #64ffda;
+  --primary-font-color-m: rgba(100, 255, 218, 0.6);
+  --secondary-font-color: #0a192f;
+
+  --font-size-para: calc(0.5rem + 0.5vw);
+  --font-size-para-m: calc(0.6rem + 0.8vw);
+  --font-size-heading: calc(2rem + 1vw);
+  --font-size-heading2: calc(1.5rem + 0.8vw);
+  --font-size-heading3: calc(1rem + 0.6vw);
+
+  --letter-spacing: 0.1rem;
+
+  background-color: var(--secondary-color);
+  font-size: 10px;
+}
+
+a:link,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+
+@media only screen and (max-width:910px) {
+ 
+}
+
+@media only screen and (max-width:500px) {
+ 
+}
+
+.active {
+  color: orange;
 }

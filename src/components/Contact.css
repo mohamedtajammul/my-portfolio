@@ -1,0 +1,66 @@
+section#contact {
+    min-height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__heading {
+    font-size: var(--font-size-heading);
+    color: var(--primary-font-color);
+    margin-bottom: 2rem;
+}
+
+.contact__heading2 {
+    font-size: var(--font-size-heading3);
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.contact__para {
+    font-size: var(--font-size-para);
+    color: white;
+    width: 25rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+section#contact a:link,
+section#contact a:active {
+    text-decoration: none;
+    color: var(--primary-font-color);
+    font-size: var(--font-size-para);
+    margin-left: 0;
+
+    border: 2px solid var(--primary-font-color);
+    padding: 0.8rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+section#contact a:hover,
+section#contact a:active {
+    color: var(--secondary-font-color);
+    background-color: var(--primary-font-color);
+}
+
+/* ------------------------------------------ width 600px ------------------------------------------ */
+
+@media only screen and (max-width:600px) {
+    .contact__para{
+        width: 20rem;
+        font-size: var(--font-size-para-m);
+    }
+}
+
+/* ------------------------------------------ width 450px ------------------------------------------ */
+
+@media only screen and (max-width:450px) {
+    .contact__para{
+        width: 13rem;
+        font-size: var(--font-size-para-m);
+    }
+}

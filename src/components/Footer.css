@@ -1,0 +1,16 @@
+footer {
+    min-height: 15vh;
+    background-color: var(--primary-color);
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > p {
+    font-size: var(--font-size-para);
+    color: white;
+    opacity: 0.6;
+    margin-bottom: 1rem;
+}

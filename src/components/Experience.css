@@ -1,0 +1,106 @@
+section#experience {
+    min-height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience__heading {
+    font-size: var(--font-size-heading2);
+    color: var(--primary-font-color);
+    margin-bottom: 2rem;
+}
+
+.experience__container {
+    max-width: 60%;
+    padding: 2rem 0;
+
+    display: flex;    
+}
+
+.experience__container--1 {
+    border-right: 2px solid white;
+    padding: 0 2rem;
+    text-align: right;
+    flex: 1;
+
+    display: flex;
+
+    position: relative;
+}
+
+.experience__container--1::after {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: -6px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--primary-font-color);
+}
+
+.experience__container--company-name {
+    font-family: 'Nanum Gothic Coding', monospace;  
+    width: 100%;
+}
+
+.experience__container--company-name > p {
+    color: white;
+    opacity: 0.5;
+    font-size: var(--font-size-para);
+}
+
+.experience__container--company-name > h3 {
+    color: white;
+    font-size: var(--font-size-heading3);
+}
+
+.experience__container--2 {
+    padding: 0 2rem;
+    flex: 2;
+}
+
+.experience__container--2 > h3 {
+    color: var(--primary-font-color-m);
+    font-size: var(--font-size-heading3);
+    font-family: 'Nanum Gothic Coding', monospace;
+    margin-bottom: 0.8rem;
+}
+
+.experience__container--2 > p {
+    color: white;
+    font-size: var(--font-size-para);
+}
+
+/* ------------------------------------------ width 750px ------------------------------------------ */
+
+@media only screen and (max-width:750px) {
+    .experience__container {
+        max-width: 68%;
+
+        flex-direction: column;
+    }
+
+    .experience__container--1 {
+        border-right: 0;
+        border-bottom: 2px solid white;
+        padding: 1rem 0;
+        text-align: left;
+    }
+
+    .experience__container--1::after {
+        top: 95%;
+        left: -5px;
+    }
+
+    .experience__container--2 {
+        padding: 1rem 0;
+    }
+
+    .experience__container--2>p {
+        font-size: var(--font-size-para-m);
+    }
+}   
